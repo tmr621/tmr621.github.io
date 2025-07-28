@@ -1,25 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dark Mode Page</title>
-    <style>
-        body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        .small-text {
-            font-size: 14px;
-            color: #bbbbbb;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name - Career Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+    }
+    .project {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+    }
+    form button {
+      background: #2c3e50;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p class="small-text">Welcome to my page</p>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>Web Developer | Designer | Problem Solver</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Write a short bio here. Who you are, what you do, what you're passionate about. This is your elevator pitch.</p>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <ul>
+      <li><strong>Job Title</strong> – Company (Year - Year)</li>
+      <li><strong>Job Title</strong> – Company (Year - Year)</li>
+      <li><strong>Education:</strong> Degree, University (Year)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project Title</h3>
+      <p>Description of what this project is, what technologies were used, and what you learned.</p>
+      <a href="https://example.com" target="_blank">View Project</a>
+    </div>
+    <div class="project">
+      <h3>Another Project</h3>
+      <p>Brief details about another great piece of work.</p>
+      <a href="https://example.com" target="_blank">View Project</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:you@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
 </body>
 </html>
